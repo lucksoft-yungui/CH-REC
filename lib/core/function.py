@@ -90,9 +90,7 @@ def train(config, train_loader, dataset, val_loader, val_dataset, converter, mod
         if (i > 0) and (i % config.SAVE_FREQ == 0):
             acc = validate(config, val_loader, val_dataset, converter,
                            model, criterion, device, epoch, writer_dict, output_dict)
-            is_best = acc > float(config.TRAIN.BEST_ACC)
-            config.TRAIN.BEST_ACC = max(acc, float(config.TRAIN.BEST_ACC))
-
+        
             # save_checkpoint({
             #     'epoch': epoch + 1,
             #     'state_dict': model.state_dict(),
