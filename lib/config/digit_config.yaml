@@ -31,7 +31,7 @@ TRAIN:
   BEGIN_EPOCH: 0
   END_EPOCH: 100
   RESUME:
-    IS_RESUME: True
+    IS_RESUME: False
     FILE: '/kaggle/input/digit-aready-train/val_checkpoint.pth.tar'
   OPTIMIZER: 'adam'
   LR: 0.0001
