@@ -53,8 +53,8 @@ def recognition(config, img, model, converter, device):
     img = cv2.resize(img, (0, 0), fx=config.MODEL.IMAGE_SIZE.H / h,
                      fy=config.MODEL.IMAGE_SIZE.H / h, interpolation=cv2.INTER_CUBIC)
 
-    cv2.imshow('img', img)
-    cv2.waitKey(0)
+    # cv2.imshow('img', img)
+    # cv2.waitKey(0)
 
     # second step: keep the ratio of image's text same with training
     # h, w = img.shape

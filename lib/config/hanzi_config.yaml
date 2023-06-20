@@ -28,7 +28,7 @@ TRAIN:
   BEGIN_EPOCH: 0
   END_EPOCH: 100
   RESUME:
-    IS_RESUME: True
+    IS_RESUME: False
     FILE: '/kaggle/input/hanzirecalreadytrain/CH-REC/output/HANZI/crnn/checkpoints/val_checkpoint.pth.tar'
   OPTIMIZER: 'adam'
   LR: 0.0001
@@ -40,7 +40,7 @@ TRAIN:
   RMSPROP_ALPHA:
   RMSPROP_CENTERED:
   FINETUNE:
-    IS_FINETUNE: false
+    IS_FINETUNE: False
     FINETUNE_CHECKPOINIT: 'output/checkpoints/mixed_second_finetune_acc_97P7.pth'
     FREEZE: true
 
