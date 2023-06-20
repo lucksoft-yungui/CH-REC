@@ -42,10 +42,10 @@ def parse_arg():
 def recognition(config, img, model, converter, device):
 
     if config.REC.BINARY:
-        _, img = cv2.threshold(img, 100, 255, cv2.THRESH_BINARY_INV)
+        _, img = cv2.threshold(img, 122, 255, cv2.THRESH_BINARY)
 
-    # cv2.imshow('img', img)
-    # cv2.waitKey(0)
+    cv2.imshow('img', img)
+    cv2.waitKey(0)
 
     # github issues: https://github.com/Sierkinhane/CRNN_Chinese_Characters_Rec/issues/211
     h, w = img.shape
@@ -53,8 +53,8 @@ def recognition(config, img, model, converter, device):
     img = cv2.resize(img, (0, 0), fx=config.MODEL.IMAGE_SIZE.H / h,
                      fy=config.MODEL.IMAGE_SIZE.H / h, interpolation=cv2.INTER_CUBIC)
 
-    # cv2.imshow('img', img)
-    # cv2.waitKey(0)
+    cv2.imshow('img', img)
+    cv2.waitKey(0)
 
     # second step: keep the ratio of image's text same with training
     # h, w = img.shape

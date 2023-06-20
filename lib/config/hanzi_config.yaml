@@ -28,8 +28,8 @@ TRAIN:
   BEGIN_EPOCH: 0
   END_EPOCH: 100
   RESUME:
-    IS_RESUME: False
-    FILE: '/Users/peiyandong/Documents/code/ai/CRNN_Chinese_Characters_Rec/output/HANZI/crnn/checkpoints/val_checkpoint.pth.tar'
+    IS_RESUME: True
+    FILE: '/kaggle/input/hanzirecalreadytrain/CH-REC/output/HANZI/crnn/checkpoints/val_checkpoint.pth.tar'
   OPTIMIZER: 'adam'
   LR: 0.0001
   WD: 0.0

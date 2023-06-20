@@ -14,9 +14,9 @@
             "request": "launch",
             "program": "${workspaceFolder}/demo.py",
             "args": ["--cfg", "lib/config/digit_config.yaml",
-            "--image_path", "images/2.jpg",
+            "--image_path", "images/88-68.jpg",
             "--binary",
-            "--checkpoint", "output/DIGIT/crnn/checkpoints/best__70ep__0.9640acc__val_checkpoint.pth.tar"]
+            "--checkpoint", "output/DIGIT/crnn/checkpoints/best__32ep__0.9620acc__val_checkpoint.pth.tar"]
         },
         {
             "name": "Python: rec-hanzi",
@@ -24,9 +24,9 @@
             "request": "launch",
             "program": "${workspaceFolder}/demo-hanzi.py",
             "args": ["--cfg", "lib/config/hanzi_config.yaml",
-            "--image_path", "images/hanzi/1.jpg",
+            "--image_path", "images/hanzi/7.jpg",
             "--binary",
-            "--checkpoint", "output/HANZI/crnn/checkpoints/best__09ep__1.0000acc__val_checkpoint.pth.tar"]
+            "--checkpoint", "output/HANZI/crnn/checkpoints/val_checkpoint.pth_new.tar"]
         },
     ]
 }
