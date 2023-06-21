@@ -11,13 +11,10 @@ CUDNN:
   ENABLED: True
 
 DATASET:
-  DATASET: DIGIT
-  DATA_ROOT_PATH: "/kaggle/input/digit-data/data-digit/img"
-  DATA_LABEL_PATH: "/kaggle/input/digit-data/data-digit/label"
-  DATA_FILE_NAME: "digit"
-  CHAR_FILE: 'lib/dataset/txt/char_std_5990.txt'
-  JSON_FILE: {'train': 'lib/dataset/txt/train.txt', 'val': 'lib/dataset/txt/test.txt'}
-#  JSON_FILE: {'train': 'H:/DL-DATASET/360M/train.txt', 'val': 'H:/DL-DATASET/360M/test.txt'}
+  DATASET: HANZI
+  DATA_ROOT_PATH: "/Users/peiyandong/Documents/code/ai/train-data/hwdb/single/data/imgs"
+  DATA_LABEL_PATH: "/Users/peiyandong/Documents/code/ai/train-data/hwdb/single/data/labels"
+  DATA_FILE_NAME: hwdb
   SCALE_FACTOR: 0.25
   ROT_FACTOR: 30
   STD: 0.193
@@ -32,7 +29,7 @@ TRAIN:
   END_EPOCH: 100
   RESUME:
     IS_RESUME: False
-    FILE: '/kaggle/input/digit-aready-train/val_checkpoint.pth.tar'
+    FILE: '/kaggle/input/hanzirecalreadytrain/CH-REC/output/HANZI/crnn/checkpoints/val_checkpoint.pth.tar'
   OPTIMIZER: 'adam'
   LR: 0.0001
   WD: 0.0
@@ -43,7 +40,7 @@ TRAIN:
   RMSPROP_ALPHA:
   RMSPROP_CENTERED:
   FINETUNE:
-    IS_FINETUNE: false
+    IS_FINETUNE: False
     FINETUNE_CHECKPOINIT: 'output/checkpoints/mixed_second_finetune_acc_97P7.pth'
     FREEZE: true
 
