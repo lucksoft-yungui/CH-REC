@@ -44,8 +44,8 @@ def recognition(config, img, model, converter, device):
     if config.REC.BINARY:
         _, img = cv2.threshold(img, 122, 255, cv2.THRESH_BINARY)
 
-    cv2.imshow('img', img)
-    cv2.waitKey(0)
+    # cv2.imshow('img', img)
+    # cv2.waitKey(0)
 
     # github issues: https://github.com/Sierkinhane/CRNN_Chinese_Characters_Rec/issues/211
     h, w = img.shape

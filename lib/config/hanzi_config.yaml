@@ -12,8 +12,8 @@ CUDNN:
 
 DATASET:
   DATASET: HANZI
-  DATA_ROOT_PATH: "/kaggle/input/hanzi-data/imgs"
-  DATA_LABEL_PATH: "/kaggle/input/hanzi-data/labels"
+  DATA_ROOT_PATH: "/Users/peiyandong/Documents/code/ai/train-data/hwdb/single/data/imgs"
+  DATA_LABEL_PATH: "/Users/peiyandong/Documents/code/ai/train-data/hwdb/single/data/labels"
   DATA_FILE_NAME: hwdb
   SCALE_FACTOR: 0.25
   ROT_FACTOR: 30

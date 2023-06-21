@@ -24,9 +24,9 @@
             "request": "launch",
             "program": "${workspaceFolder}/demo-hanzi.py",
             "args": ["--cfg", "lib/config/hanzi_config.yaml",
-            "--image_path", "images/hanzi/6.jpg",
+            "--image_path", "images/hanzi/7.jpg",
             "--binary",
-            "--checkpoint", "/Users/peiyandong/Downloads/best__38ep__1.0000acc__val_checkpoint.pth.tar"]
+            "--checkpoint", "output/HANZI/crnn/checkpoints/val_checkpoint.pth_last.tar"]
         },
     ]
 }
